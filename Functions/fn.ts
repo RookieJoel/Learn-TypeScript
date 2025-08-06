@@ -48,3 +48,4 @@ function multiply(a: number, b: number): number {
 
 //test multiply function
 console.log(multiply(5, 10)); // Output: 50
+console.log(multiply(2, 3)); // Output: 6
