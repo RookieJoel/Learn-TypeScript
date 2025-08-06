@@ -23,7 +23,6 @@ enum Status {
     inProgress,
 }
 
-console.log(Status.Done); //1
-console.log(Status[1]); //Done
-console.log(Status.inProgress); //For any subsequent member without its own value, it will be assigned previousMemberValue + 1
-console.log(Status[2]); //inProgress
+console.log(Status.Done);//2
+console.log(Status.inProgress);//3 For any subsequent member without its own value, it will be assigned previousMemberValue + 1.
+console.log(Status[2]);//Done   

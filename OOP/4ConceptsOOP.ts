@@ -96,3 +96,35 @@ const rectangle = new Rectangle(10, 20);
 console.log(`Circle area: ${circle.getArea()}`);
 console.log(`Circle perimeter: ${circle.getPerimeter()}`);
 console.log(`Rectangle area: ${rectangle.getArea()}`);
+
+//polymorphism
+function printShapeInfo(shape: Shape2D) {
+    console.log(`Area: ${shape.getArea()}`);
+    console.log(`Perimeter: ${shape.getPerimeter()}`);
+}
+printShapeInfo(circle);
+printShapeInfo(rectangle);
+
+//access modifiers
+class Person {
+    private name: string;
+    protected age: number;
+    public email: string;
+    constructor(name: string, age: number, email: string) {
+        this.name = name;
+        this.age = age;
+        this.email = email;
+    }
+    private getName(): string {
+        return this.name;
+    }
+    protected getAge(): number {
+        return this.age;
+    }
+    public getEmail(): string {
+        return this.email;
+    }
+    public getInfo(): string {
+        return `Name: ${this.getName()}, Age: ${this.getAge()}, Email: ${this.getEmail()}`;
+    }
+}
